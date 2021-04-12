@@ -1,0 +1,65 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 10/04/2021, 11:47:49 PM
+    Author     : ANGEL
+*/
+
+.container {
+    background-color: white;
+    min-height: 400px;
+    position: relative;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.input-group {
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+
+.input-group-prepend,.input-group-text {
+    width: 150px;
+}
+
+.jumbotron {
+    background-color: darkblue;
+    color: white;
+    margin-bottom: 0px;
+}
+
+.main-buttons {
+  margin: 0px;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  width: 100%;
+}
+
+.m-panel {
+    border: 1px solid;
+    border-radius: 5px;
+    margin: 15px;
+}
+
+.m-panel-heading {
+    background-color: darkblue;
+    color: white;
+    padding: 5px;
+}
+
+.m-panel-body {
+    padding: 5px;
+}
+
+html, body {
+    height:100%;
+}
+
+body {
+    background-color: lightgray;
+}
