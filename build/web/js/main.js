@@ -168,7 +168,7 @@ function listUsers(){
                 $('#usersList .table-info').show().find('tbody').html('');
                 $.each(json, function(ix, el){
                     activo = el.activo == 'S' ? 'Si' : 'No';
-                    $('#usersList .table-info').find('tbody').append('<tr onclick="viewUser('+el.idUsuario+')" id="'+el.idUsuario+'"><td>'+el.idUsuario+'<input type="hidden" name="idUser" value="'+el.idUsuario+'"><input type="hidden" name="idRol" value="'+el.idRol+'"><input type="hidden" name="nombre" value="'+el.nombre+'"><input type="hidden" name="activo" value="'+activo+'"></td><td>'+el.nombre+'</td><td>'+el.idRol+'</td><td>'+activo+'</td></tr>');
+                    $('#usersList .table-info').find('tbody').append('<tr onclick="viewUser('+el.idUsuario+')" id="'+el.idUsuario+'"><td>'+el.idUsuario+'<input type="hidden" name="idUser" value="'+el.idUsuario+'"><input type="hidden" name="idRol" value="'+el.idRol+'"><input type="hidden" name="nombre" value="'+el.nombre+'"><input type="hidden" name="activo" value="'+activo+'"></td><td>'+el.nombre+'</td><td>'+el.rol+'</td><td>'+activo+'</td></tr>');
                 });
             }
         }
