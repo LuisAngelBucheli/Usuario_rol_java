@@ -47,7 +47,7 @@ public class UsuarioDAO {
         con.Connect();
         connection = con.getConnection();
         try{
-            String sql = "UPDATE usuario SET nombre = '" + user.getNombre() + "', id_rol = " + user.getIdRol() + " WHERE id_usuario = " + user.getIdUsuario() + ";";
+            String sql = "UPDATE usuario SET nombre = '" + user.getNombre() + "', id_rol = " + user.getIdRol() + ", activo = '" + user.getActivo().charAt(0) + "' WHERE id_usuario = " + user.getIdUsuario() + ";";
             ps = connection.prepareStatement(sql);
             ps.executeUpdate();
             success = true;
